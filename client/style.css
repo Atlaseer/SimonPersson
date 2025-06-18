@@ -1,43 +1,62 @@
-
-html, body{
-    height: 100%;
-    margin: 0;
-    background-color: #ffe767;
-
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background-color: #ffe767;
 }
 
-header{
-    color: blue;
+header {
+  color: blue;
 }
 
-main{
-    min-height: 100vh;
-    color: greenyellow;
-    
-    background-size: cover;
-    background-repeat: no-repeat;
+main {
+  min-height: 100vh;
+  color: greenyellow;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-footer{
-    color: blue;
+footer {
+  color: blue;
 }
 
-.button{
-    color: black;
-    text-decoration: none;
+.menu {
 }
 
-#active-button{
-    color: blue;
+.menu-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  list-style: none; /*This removes the floating dot before the list items*/
 }
 
-.start{
-    background-image: url('assets/woods.jpg');
+.button {
+  background-color: greenyellow;
+  color: black;
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: 0.3s;
+  padding: 5px;
+  border: 2px solid black;
+  margin: 2px;
 }
 
-.about{
-    background-image: url('assets/woods2.jpg');
+.button:hover {
+  background-color: teal;
 }
-.experience{
-    background-image: url('assets/woods3.jpg');
+
+#active-button {
+  color: blue;
+}
+
+.start {
+  background-image: url("assets/woods.jpg");
+}
+
+.about {
+  background-image: url("assets/woods2.jpg");
+}
+.experience {
+  background-image: url("assets/woods3.jpg");
 }
