@@ -2,7 +2,7 @@ html,
 body {
   height: 100%;
   margin: 0;
-  background-color: #ffe767;
+  background-color: black;
 }
 
 header {
@@ -11,13 +11,15 @@ header {
 
 main {
   min-height: 100vh;
-  color: greenyellow;
+  color: black;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 footer {
-  color: blue;
+  color: teal;
+  display: flex;
+  justify-content: center;
 }
 
 .menu {
@@ -26,20 +28,24 @@ footer {
 .menu-items {
   display: flex;
   justify-content: center;
-  align-items: center;
-  text-decoration: none;
   list-style: none; /*This removes the floating dot before the list items*/
 }
 
 .button {
-  background-color: greenyellow;
+  display: flex;
+  background-color: #ffe767;
   color: black;
   text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  font-style: normal;
   font-size: 1.5rem;
-  transition: 0.3s;
+  transition: 0.4s;
+  width: 120px;
+  height: 30px;
   padding: 5px;
-  border: 2px solid black;
-  margin: 2px;
+  border: 2px solid darkgoldenrod;
+  margin: 10px;
 }
 
 .button:hover {
@@ -47,7 +53,8 @@ footer {
 }
 
 #active-button {
-  color: blue;
+  color: darkgoldenrod;
+  text-decoration: underline;
 }
 
 .start {
@@ -57,6 +64,23 @@ footer {
 .about {
   background-image: url("assets/woods2.jpg");
 }
+
 .experience {
   background-image: url("assets/woods3.jpg");
+}
+
+.box {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background-color: red;
+}
+
+.corner-img {
+  position: absolute;
+  top: 70px;
+  right: 30px;
+  width: 300px;
+  height: auto;
+  z-index: 10;
 }
