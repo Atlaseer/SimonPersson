@@ -12,6 +12,10 @@ header {
 main {
   min-height: 100vh;
   color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -23,6 +27,7 @@ footer {
 }
 
 .menu {
+  background-color: red;
 }
 
 .menu-items {
@@ -57,6 +62,32 @@ footer {
   text-decoration: underline;
 }
 
+.box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 650px;
+}
+
+.box {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  background-color: teal;
+}
+
+.corner-img {
+  position: absolute;
+  top: 70px;
+  right: 30px;
+  width: 300px;
+  height: auto;
+  z-index: 10;
+}
+
 .start {
   background-image: url("assets/woods.jpg");
 }
@@ -67,20 +98,4 @@ footer {
 
 .experience {
   background-image: url("assets/woods3.jpg");
-}
-
-.box {
-  position: relative;
-  width: 300px;
-  height: 300px;
-  background-color: red;
-}
-
-.corner-img {
-  position: absolute;
-  top: 70px;
-  right: 30px;
-  width: 300px;
-  height: auto;
-  z-index: 10;
 }
