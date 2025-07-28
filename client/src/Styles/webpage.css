@@ -101,13 +101,13 @@ footer {
 }
 
 .start {
-  background-image: url("assets/woods.jpg");
+  background-image: url("../assets/woods.jpg");
 }
 
 .about {
-  background-image: url("assets/woods2.jpg");
+  background-image: url("../assets/woods2.jpg");
 }
 
 .experience {
-  background-image: url("assets/woods3.jpg");
+  background-image: url("../assets/woods3.jpg");
 }
