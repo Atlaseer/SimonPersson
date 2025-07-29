@@ -5,10 +5,6 @@ body {
   background-color: black;
 }
 
-header {
-  color: blue;
-}
-
 main {
   min-height: 100vh;
   color: black;
@@ -18,6 +14,10 @@ main {
   align-items: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+header {
+  color: blue;
 }
 
 footer {

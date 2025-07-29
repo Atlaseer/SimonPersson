@@ -1,12 +1,12 @@
 import { BrowserRouter } from 'react-router-dom';
-import '../Styles/header.css';
+import '../Styles/webpage.css';
 
 function Header() {
     return (
         <BrowserRouter>
-        <header className="header">
-            <h1>Simon Persson</h1>
-        </header>
+            <header className="header">
+                <h1>Simon Persson</h1>
+            </header>
         </BrowserRouter>
     );
 }
