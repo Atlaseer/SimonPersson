@@ -10,7 +10,7 @@ import WebPage from './Pages/Webpage.jsx';
 function App() {
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/SimonPersson'>
     <Header/>
     <Routes>
       <Route path="/" element={<WebPage/>} />

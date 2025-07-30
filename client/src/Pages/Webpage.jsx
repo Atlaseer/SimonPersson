@@ -10,7 +10,7 @@ function WebPage() {
     }, []);
 
     return(
-      
+     
         <main className="homepage">
                 <img 
                     src={faceImg} 
@@ -22,6 +22,7 @@ function WebPage() {
                     <div className="page right-page" id="rightPage">Right-page</div>
                 </div>
         </main>
+        
     );
 }
 
