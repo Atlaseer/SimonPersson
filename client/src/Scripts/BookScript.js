@@ -1,4 +1,4 @@
-export function setupBookPages() {
+export function BookScript() {
   let currentPage = 0;
 
   const leftPage = document.getElementById("leftPage");

@@ -3,6 +3,7 @@ import './App.css'
 import './Styles/webpage.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Header from './Components/header.jsx';
+import Footer from './Components/Footer.jsx';
 import WebPage from './Pages/Webpage.jsx';
 
 

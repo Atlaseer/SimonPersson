@@ -3,11 +3,9 @@ import '../Styles/webpage.css';
 
 function Header() {
     return (
-        <BrowserRouter>
-            <header className="header">
-                <h1>Simon Persson</h1>
-            </header>
-        </BrowserRouter>
+        <header className="header">
+            <h1>Simon Persson</h1>
+        </header>
     );
 }
 
