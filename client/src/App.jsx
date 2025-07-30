@@ -1,6 +1,5 @@
 import { useState } from 'react'
-import './App.css'
-import './Styles/webpage.css';
+import './Styles/App.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Header from './Components/header.jsx';
 import Footer from './Components/Footer.jsx';

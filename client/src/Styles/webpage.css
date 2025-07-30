@@ -2,7 +2,8 @@ html,
 body {
   height: 100%;
   margin: 0;
-  background-color: black;
+  background-image: url("../assets/woods.jpg");
+  background-repeat: no-repeat;
 }
 
 main {
@@ -16,14 +17,21 @@ main {
   background-repeat: no-repeat;
 }
 
-header {
-  color: blue;
+.header {
+  height: 120px;
+  width: 100%;
+  color: red;
+  background-color: grey;
+  border: 1px solid black;
 }
 
 footer {
   color: teal;
+  text-align: center;
   display: flex;
   justify-content: center;
+  background-color: grey;
+  border: 1px solid black;
 }
 
 .menu {
@@ -100,6 +108,9 @@ footer {
   z-index: 10;
 }
 
+:root {
+  background-image: url("../assets/woods.jpg");
+}
 .start {
   background-image: url("../assets/woods.jpg");
 }
