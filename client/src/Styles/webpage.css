@@ -20,7 +20,6 @@ main {
 .header {
   height: 120px;
   width: 100%;
-  color: red;
   background-color: grey;
   border: 1px solid black;
 }
@@ -35,7 +34,6 @@ footer {
 }
 
 .menu {
-  background-color: red;
 }
 
 .menu-items {
@@ -75,7 +73,6 @@ footer {
   width: 100vh;
   height: 85vh;
   overflow: hidden;
-  background-color: red;
 }
 
 .page {
