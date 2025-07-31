@@ -100,10 +100,10 @@ footer {
 }
 
 .corner-img {
-  position: absolute;
+  position: fixed;
   top: 70px;
   right: 30px;
-  width: 300px;
+  width: 200px;
   height: auto;
   z-index: 10;
 }

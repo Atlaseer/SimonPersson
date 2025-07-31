@@ -6,8 +6,8 @@ export function BookScript() {
 
   const pages = [
     { left: "", right: "Front Cover" },
-    { left: "Page 1", right: "Page 2" },
-    { left: "Page 3", right: "Back Cover" },
+    { left: "Introduction", right: "Projects" },
+    { left: "Experience", right: "Back Cover" },
   ];
 
   function updatePages() {
