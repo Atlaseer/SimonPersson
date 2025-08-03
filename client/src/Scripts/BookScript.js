@@ -5,8 +5,8 @@ export function BookScript() {
   const rightPage = document.getElementById("rightPage");
 
   const pages = [
-    { left: "", right: "Hello! I´m Simon" },
-    { left: "I´ve worked on these projects", right: "Which has taught me" },
+    { left: "", right: "Hello! I'm Simon" },
+    { left: "I've worked on these projects", right: "Which has taught me" },
     { left: "Fin" },
   ];
 
