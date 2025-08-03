@@ -3,8 +3,14 @@ import '../Styles/webpage.css';
 
 function Header() {
     return (
-        <header className="header">
-            <h1>Simon Persson</h1>
+        <header>
+            <div>
+                <ul className='menu-items'>
+                    <li>Story</li>
+                    <li>Projects</li>
+                    <li>About me</li>
+                </ul>
+            </div>
         </header>
     );
 }
