@@ -4,7 +4,11 @@ import '../Styles/webpage.css';
 function Footer() {
     return (
         <footer className="footer"> 
-            <h2>This is footer</h2> 
+            <ul>
+                <li>Story</li>
+                <li>Projects</li>
+                <li>About me</li>
+            </ul>
         </footer>
     )
 }

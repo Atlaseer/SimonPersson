@@ -10,13 +10,17 @@ function App() {
 
   return (
     <BrowserRouter basename='/SimonPersson'>
-    <Header/>
-    <Routes>
-      <Route path="/" element={<WebPage/>} />
-    </Routes>
-    <Footer/>
+      <Header/>
 
-  </BrowserRouter>
+      <Routes>
+
+        <Route path="/" element={<WebPage/>} />
+        
+      </Routes>
+
+      <Footer/>
+
+    </BrowserRouter>
   )
 }
 

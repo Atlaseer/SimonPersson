@@ -8,6 +8,7 @@ body {
 
 main {
   min-height: 100vh;
+  min-width: 100vh;
   color: black;
   display: flex;
   flex-direction: column;
@@ -19,17 +20,17 @@ main {
 
 .header {
   height: 120px;
-  width: 100%;
-  background-color: grey;
+  width: 50vw;
+  background-color: teal;
   border: 1px solid black;
 }
 
 footer {
-  color: teal;
+  color: white;
   text-align: center;
   display: flex;
   justify-content: center;
-  background-color: grey;
+  background-color: teal;
   border: 1px solid black;
 }
 
@@ -70,7 +71,8 @@ footer {
 
 .book {
   display: flex;
-  width: 100vh;
+  justify-content: center;
+  width: 50vw;
   height: 85vh;
   overflow: hidden;
 }
@@ -81,7 +83,7 @@ footer {
   justify-content: center;
   align-items: center;
   font-size: 2rem;
-  width: 50vh;
+  width: 35vw;
   height: 100vh;
   cursor: pointer;
   background-color: beige;
@@ -90,10 +92,11 @@ footer {
 
 .left-page {
   background-color: beige;
-}
+  border-right: 5px solid black;}
 
 .right-page {
   background-color: bisque;
+  border-left: 5px solid black;
 }
 
 .corner-img {
