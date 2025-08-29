@@ -42,7 +42,7 @@ header {
   text-align: center;
   display: flex;
   justify-content: center;
-  height: 200px;
+  height: px;
   background-color: #444;
   border: 1px solid black;
   padding: 20px;
@@ -59,7 +59,7 @@ footer {
 
 .menu-items li {
   border: 2px purple solid;
-  padding: 10px;
+  padding: 5px;
   display: flex;
   flex-direction: row;
 }
