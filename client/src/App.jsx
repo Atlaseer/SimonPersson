@@ -14,12 +14,15 @@ function App() {
     <BrowserRouter basename='/SimonPersson'>
       <Header/>
 
-      <Routes>
+        <main>
+          <Routes>
 
-        <Route path="/" element={<Book/>} />
+            <Route path="/" element={<Book/>} />
+            <Route path="/projects" element={<Projects/>}/>
+            <Route path="/about" element={<AboutMe/>}/>
 
-      </Routes>
-
+          </Routes>
+        </main>
       <Footer/>
 
     </BrowserRouter>

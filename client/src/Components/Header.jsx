@@ -1,13 +1,13 @@
-import { BrowserRouter } from 'react-router-dom';
+import { Link, BrowserRouter } from 'react-router-dom';
 
 function Header() {
     return (
         <header>
             <div>
                 <ul className='menu-items'>
-                    <li>Book</li>
-                    <li>Projects</li>
-                    <li>About me</li>
+                    <li><Link to="/">Story</Link></li>
+                    <li><Link to="/projects">Projects</Link></li>
+                    <li><Link to="/about">About Me</Link></li>
                 </ul>
             </div>
         </header>
