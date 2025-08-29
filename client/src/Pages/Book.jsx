@@ -3,7 +3,7 @@ import '../Styles/webpage.css';
 //import {BookScript} from '../Scripts/BookScript.js';
 import faceImg  from '../assets/face-img.jpg';
 
-function WebPage() {
+function Book() {
     
     const[currentPage, setCurrentPage] = useState(0)
 
@@ -32,4 +32,4 @@ function WebPage() {
     );
 }
 
-export default WebPage;
+export default Book;

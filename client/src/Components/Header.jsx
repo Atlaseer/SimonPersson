@@ -5,7 +5,7 @@ function Header() {
         <header>
             <div>
                 <ul className='menu-items'>
-                    <li>Story</li>
+                    <li>Book</li>
                     <li>Projects</li>
                     <li>About me</li>
                 </ul>

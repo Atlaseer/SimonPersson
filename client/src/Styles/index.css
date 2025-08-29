@@ -58,15 +58,16 @@ footer {
 }
 
 .menu-items li {
-  border: 2px purple solid;
+  border: 2px black solid;
   padding: 5px;
   display: flex;
+  justify-content: center;
   flex-direction: row;
 }
 
 .menu-items {
-  color: white;
-  background-color: red;
+  color: black;
+  background-color: whitesmoke;
   flex-direction: row;
   display: flex;
   justify-content: center;
