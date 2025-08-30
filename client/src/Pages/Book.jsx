@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import '../Styles/webpage.css';
-//import {BookScript} from '../Scripts/BookScript.js';
 import faceImg  from '../assets/face-img.jpg';
 
 function Book() {
@@ -9,7 +8,7 @@ function Book() {
 
     const pages= [
         { left: "", right: "Hello! I´m Simon"},
-        { left: "I´ve worked on these projeccts", right: "Which has taught me"},
+        { left: "I´ve worked on a few projects on github!", right: "Which has taught me"},
         { left: "Fin", right: ""}
     ];
 
