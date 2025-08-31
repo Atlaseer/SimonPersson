@@ -1,43 +1,42 @@
-import { useState } from 'react';
-import '../Styles/book.css';
-import faceImg from '../assets/face-img.jpg';
+import { useState } from "react";
+import "../Styles/book.css";
+import faceImg from "../assets/face-img.jpg";
 
 function Book() {
-  const [currentPage, setCurrentPage] = useState(0);
-  const [flippedPages, setFlippedPages] = useState({}); // track flips individually
+  const [currentSheet, setCurrentSheet] = useState(0);
+  const [flipping, setFlipping] = useState(false);
 
-  const pages = [
-    { left: "", right: "Hello, I'm Simon" },
+  const sheets = [
+    { left: null, right: "Hello, I'm Simon" }, 
     { left: "I've worked on a few projects on github!", right: "Which has taught me" },
-    { left: "Fin", right: "" }
+    { left: "Fin", right: null } 
   ];
 
-  const toggleFlip = (side) => {
-    setFlippedPages((prev) => ({
-      ...prev,
-      [`${currentPage}-${side}`]: !prev[`${currentPage}-${side}`],
-    }));
-  };
-
-  const nextPage = () => {
-    if (currentPage < pages.length - 1) {
-      setCurrentPage(currentPage + 1);
+  const nextSheet = () => {
+    if (currentSheet < sheets.length - 1 && !flipping) {
+      setFlipping(true);
+      setTimeout(() => {
+        setCurrentSheet(currentSheet + 1);
+        setFlipping(false);
+      }, 800);
     }
   };
 
-  const prevPage = () => {
-    if (currentPage > 0) {
-      setCurrentPage(currentPage - 1);
+  const prevSheet = () => {
+    if (currentSheet > 0 && !flipping) {
+      setFlipping(true);
+      setTimeout(() => {
+        setCurrentSheet(currentSheet - 1);
+        setFlipping(false);
+      }, 800);
     }
   };
 
-  const left = (pages[currentPage].left || "").trim();
-  const right = (pages[currentPage].right || "").trim();
+  const { left, right } = sheets[currentSheet];
 
   let mode = "";
-  if (currentPage === 0) mode = "first";
-  else if (currentPage === pages.length - 1) mode = "last";
-  else if (!left || !right) mode = "single";
+  if (currentSheet === 0) mode = "first";
+  else if (currentSheet === sheets.length - 1) mode = "last";
   else mode = "spread";
 
   return (
@@ -45,32 +44,18 @@ function Book() {
       <img src={faceImg} alt="portrait-of-simon" className="corner-img" />
 
       <div className={`book ${mode}`}>
-        {left && (
-          <div
-            className={`page left-page ${
-              flippedPages[`${currentPage}-left`] ? "flipped" : ""
-            }`}
-            onClick={() => {
-              toggleFlip("left");
-              prevPage();
-            }}
-          >
-            {left}
-          </div>
-        )}
-        {right && (
-          <div
-            className={`page right-page ${
-              flippedPages[`${currentPage}-right`] ? "flipped" : ""
-            }`}
-            onClick={() => {
-              toggleFlip("right");
-              nextPage();
-            }}
-          >
-            {right}
-          </div>
-        )}
+        <div className={`sheet ${flipping ? "flipped" : ""}`}>
+          {left && (
+            <div className="page left-page" onClick={prevSheet}>
+              {left}
+            </div>
+          )}
+          {right && (
+            <div className="page right-page" onClick={nextSheet}>
+              {right}
+            </div>
+          )}
+        </div>
       </div>
     </main>
   );

@@ -19,78 +19,38 @@ main {
 }
 
 .book {
-  display: flex;
   justify-content: center;
+  position: relative;
+  display: flex;
+  overflow: hidden;
   width: 70vw;
   height: 85vh;
-  overflow: hidden;
   perspective: 2000px;
 }
 
 .page {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  font-size: 2rem;
+  position: absolute;
   width: 50%;
   height: 100%;
-  cursor: pointer;
-  background-color: beige;
-  transition: transform 0.8s ease;
   backface-visibility: hidden;
-}
-
-.book.single .page {
-  flex: 0 0 50%;
-  margin: 0 auto;
-}
-
-.book.single {
+  display: flex;
+  align-items: center;
   justify-content: center;
+  font-size: 2rem;
+  background: beige;
+  border: 1px solid #000;
+  cursor: pointer;
 }
 
-.book.first .right-page {
-  flex: 0 0 50%;
+.sheet {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.8s ease;
 }
 
-.book.first {
-  justify-content: flex-end;
-}
-
-.book.first .left-page {
-  display: none;
-}
-
-.book.last .left-page {
-  flex: 0 0 50%;
-}
-
-.book.last {
-  justify-content: flex-start;
-}
-
-.book.last .right-page {
-  display: none;
-}
-
-.book.spread .page {
-  flex: 1;
-}
-
-.left-page {
-  transform-origin: right;
-  background-color: beige;
-  border-right: 5px solid black;
-}
-
-.right-page {
-  transform-origin: left;
-  background-color: bisque;
-  border-left: 5px solid black;
-}
-
-.page.flipped {
+.sheet.flipped {
   transform: rotateY(-180deg);
 }
 
@@ -101,6 +61,26 @@ main {
   width: 200px;
   height: auto;
   z-index: 10;
+}
+
+.left-page {
+  left: 0;
+  background: beige;
+  border-right: 5px solid black;
+}
+
+.right-page {
+  right: 0;
+  background: bisque;
+  border-left: 5px solid black;
+}
+
+.book.first .left-page {
+  display: none;
+}
+
+.book.last .right-page {
+  display: none;
 }
 
 :root {
