@@ -3,7 +3,7 @@ import { BrowserRouter } from 'react-router-dom';
 function Footer() {
     return (
         <footer> 
-            <h2>This is footer</h2> 
+            <h2>Simon Persson 2025</h2>
         </footer>
     )
 }
