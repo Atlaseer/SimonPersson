@@ -75,6 +75,11 @@ main {
   border-left: 5px solid black;
 }
 
+.page.back {
+  transform: rotateY(180deg);
+  background: beige;
+}
+
 .book.first .left-page {
   display: none;
 }
