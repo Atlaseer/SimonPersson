@@ -6,7 +6,7 @@
 }
 
 .project-grid {
-  display: flex;
+  display: grid;
   flex-direction: row;
   grid-template-columns: repeat(2, 1fr);
   overflow-x: visible;
@@ -17,7 +17,7 @@
   height: 600px;
   width: 800px;
   border: 5px solid black;
-  margin: 5px;
+  margin: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,4 +28,13 @@
   height: 55%;
   width: 90%;
   border-radius: 2px solid black;
+  object-fit: cover;
+}
+
+.project-class .location,
+.project-class .description {
+  align-self: flex-start;
+  margin-left: 40px;
+  color: black;
+  text-align: left;
 }
