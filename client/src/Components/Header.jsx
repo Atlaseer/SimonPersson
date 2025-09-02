@@ -5,9 +5,9 @@ function Header() {
         <header>
             <div>
                 <ul className='menu-items'>
-                    <li className='button'><Link to="/">Story</Link></li>
-                    <li className='button'><Link to="/projects">Projects</Link></li>
-                    <li className='button'><Link to="/about">About Me</Link></li>
+                    <li><Link className='button' to="/">Story</Link></li>
+                    <li><Link className='button' to="/projects">Projects</Link></li>
+                    <li><Link className='button' to="/about">About Me</Link></li>
                 </ul>
             </div>
         </header>

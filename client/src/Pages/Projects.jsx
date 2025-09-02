@@ -18,15 +18,18 @@ function Projects() {
               <h2 className='project-title'>Work-It</h2>
               <img src={projectPic1} alt="project-pic" />
               <p className='location'>Project: Hobby</p>
-              <p className='description'>App currently in development</p>
+              <p className='description'>Workout app that allows a user to create a profile and add workouts.
+              <br /> Currently in development
+              </p>
+              <p className='learn'>What I learned: </p>
             </div>
 
             <div className='project-class'>
               <h2 className='project-title'>FoodLovers</h2>
               <img src={projectPic2} alt="project-pic" />
               <p className='location'>Project: Kristianstad University</p>
-              <p className='description'>App developed in a team using MERN-stack</p>
-
+              <p className='description'>Food-related app developed in a team using MERN-stack</p>
+              <p className='learn'>What I learned: </p>
             </div>
 
             <div className='project-class'>
@@ -34,6 +37,8 @@ function Projects() {
               <img src={projectPic3} alt="project-pic" />
               <p className='location'>Project: Practice</p>
               <p className='description'>Introduction to HTML, CSS and Javascript</p>
+              <p className='learn'>What I learned: </p>
+
             </div>
 
           </div>

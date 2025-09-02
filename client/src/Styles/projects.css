@@ -32,9 +32,14 @@
 }
 
 .project-class .location,
-.project-class .description {
+.project-class .description,
+.project-class .learn {
   align-self: flex-start;
   margin-left: 40px;
   color: black;
   text-align: left;
+}
+
+.learn {
+  font-weight: bold;
 }
