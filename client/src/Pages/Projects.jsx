@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import '../Styles/index.css';
 import '../Styles/projects.css';
-import projectPic1 from '../assets/woods.jpg'
+import progressionPic from '../assets/progression.png'
 import projectPic2 from '../assets/woods2.jpg'
 import projectPic3 from '../assets/woods3.jpg'
 
@@ -15,8 +15,13 @@ function Projects() {
           <div className='project-grid'>
             
             <div className='project-class'>
-              <h2 className='project-title'>Work-It</h2>
-              <img src={projectPic1} alt="project-pic" />
+              <h2 className='project-title'>Progression</h2>
+              <a href="https://github.com/Atlaseer/Progression"
+              target='_blank'
+              rel='noopener noreferrer'>
+              <img className='img' src={progressionPic} alt="project-pic" />
+              </a>
+
               <p className='location'>Project: Hobby</p>
               <p className='description'>Workout app that allows a user to create a profile and add workouts.
               <br /> Currently in development
@@ -26,7 +31,9 @@ function Projects() {
 
             <div className='project-class'>
               <h2 className='project-title'>FoodLovers</h2>
-              <img src={projectPic2} alt="project-pic" />
+              <a href="">
+              <img className='img' src={projectPic2} alt="project-pic" />
+              </a>
               <p className='location'>Project: Kristianstad University</p>
               <p className='description'>Food-related app developed in a team using MERN-stack</p>
               <p className='learn'>What I learned: </p>
@@ -34,7 +41,10 @@ function Projects() {
 
             <div className='project-class'>
               <h2 className='project-title'>Calculator</h2>
-              <img src={projectPic3} alt="project-pic" />
+              <a href="">
+              <img className='img' src={projectPic3} alt="project-pic" />
+
+              </a>
               <p className='location'>Project: Practice</p>
               <p className='description'>Introduction to HTML, CSS and Javascript</p>
               <p className='learn'>What I learned: </p>

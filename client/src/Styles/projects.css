@@ -24,9 +24,16 @@
   justify-content: flex-start;
 }
 
-.project-class img {
-  height: 55%;
+.project-class a {
+  display: block;
+  align-items: center;
   width: 90%;
+  height: 55%;
+}
+
+.project-class img {
+  height: 100%;
+  width: 100%;
   border-radius: 2px solid black;
   object-fit: cover;
   transition: transform 0.3s;
