@@ -13,14 +13,23 @@ function Projects() {
             <div className='project-class'>
               <h2 className='project-title'>Project Title</h2>
               <img src={projectPic1} alt="project-pic" />
+              <p className='location'>Location: Kristianstad University</p>
+              <p className='description'>Description of app made by Simon</p>
             </div>
 
             <div className='project-class'>
               <h2 className='project-title'>Project title</h2>
+              <img src={projectPic1} alt="project-pic" />
+              <p className='location'>Location: Kristianstad University</p>
+              <p className='description'>Description</p>
+
             </div>
 
             <div className='project-class'>
               <h2 className='project-title'>Project title</h2>
+              <img src={projectPic1} alt="project-pic" />
+              <p className='location'>Location: Kristianstad University</p>
+              <p className='description'>Description</p>
             </div>
 
           </div>

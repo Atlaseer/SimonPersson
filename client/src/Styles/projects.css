@@ -13,15 +13,18 @@
 }
 
 .project-class {
-  background-color: aqua;
+  background-color: whitesmoke;
   height: 600px;
   width: 800px;
   border: 5px solid black;
   margin: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .project-class img {
-  justify-content: center;
   height: 55%;
   width: 90%;
   border-radius: 2px solid black;
