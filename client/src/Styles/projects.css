@@ -29,6 +29,11 @@
   width: 90%;
   border-radius: 2px solid black;
   object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.project-class img:hover {
+  transform: scale(1.1);
 }
 
 .project-class .location,
