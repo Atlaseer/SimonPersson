@@ -3,8 +3,8 @@ import { NavLink } from 'react-router-dom';
 import '../Styles/index.css';
 import '../Styles/projects.css';
 import progressionPic from '../assets/progression.png'
-import projectPic2 from '../assets/woods2.jpg'
-import projectPic3 from '../assets/woods3.jpg'
+import calcPic from '../assets/calc.png'
+import foodloversPic from '../assets/foodlovers.png'
 
 
 function Projects() {
@@ -31,8 +31,10 @@ function Projects() {
 
             <div className='project-class'>
               <h2 className='project-title'>FoodLovers</h2>
-              <a href="">
-              <img className='img' src={projectPic2} alt="project-pic" />
+              <a href="https://fullstackproject-clientside.onrender.com/"
+              target='_blank'
+              rel='noopener noreferrer'>
+              <img className='img' src={foodloversPic} alt="project-pic" />
               </a>
               <p className='location'>Project: Kristianstad University</p>
               <p className='description'>Food-related app developed in a team using MERN-stack</p>
@@ -41,8 +43,8 @@ function Projects() {
 
             <div className='project-class'>
               <h2 className='project-title'>Calculator</h2>
-              <a href="">
-              <img className='img' src={projectPic3} alt="project-pic" />
+              <a href="https://github.com/Atlaseer/calculator">
+              <img className='img' src={calcPic} alt="project-pic" />
 
               </a>
               <p className='location'>Project: Practice</p>
