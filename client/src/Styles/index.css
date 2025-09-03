@@ -13,6 +13,25 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background-image: url("../assets/woods.jpg");
+  background-repeat: no-repeat;
+}
+
+main {
+  min-height: 100vh;
+  min-width: 100vw;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 a {
   font-weight: 500;
