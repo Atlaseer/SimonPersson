@@ -1,3 +1,27 @@
 .about-page {
   background-color: beige;
 }
+
+.corner-img {
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  width: 200px;
+  height: auto;
+  border-radius: 20%;
+  transition: transform 0.3 ease;
+  cursor: pointer;
+}
+
+.corner-img:hover {
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
