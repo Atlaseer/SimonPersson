@@ -31,7 +31,7 @@ function Projects() {
 
             <div className='project-class'>
               <h2 className='project-title'>FoodLovers</h2>
-              <a href="https://github.com/Atlaseer/FullstackProject"
+              <a href="https://fullstackproject-clientside.onrender.com/"
               target='_blank'
               rel='noopener noreferrer'>
               <img className='img' src={foodloversPic} alt="project-pic" />
