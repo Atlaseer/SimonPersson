@@ -11,14 +11,15 @@
 
 .project-class {
   background-color: whitesmoke;
-  height: 600px;
-  width: 800px;
+  height: auto;
+  width: 100%;
   border: 5px solid black;
   margin: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  aspect-ratio: 4 / 3;
 }
 
 .project-class a {
@@ -29,7 +30,7 @@
 }
 
 .project-class img {
-  height: 100%;
+  height: auto;
   width: 100%;
   border-radius: 2px solid black;
   object-fit: cover;
@@ -51,4 +52,23 @@
 
 .learn {
   font-weight: bold;
+}
+
+@media (min-width: 801px) {
+  .project-class {
+    height: 600px;
+    width: 800px;
+  }
+}
+
+@media (max-width: 800px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .corner-img {
+    position: static;
+    margin: 20px auto;
+    display: block;
+  }
 }

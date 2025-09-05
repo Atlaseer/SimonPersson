@@ -102,9 +102,9 @@ footer {
   font-style: normal;
   font-size: 1.5rem;
   transition: 0.4s;
-  width: 120px;
-  height: 30px;
-  padding: 5px;
+
+  min-width: 120px;
+  padding: 10px 20px;
   border: 2px solid black;
   margin: 10px;
 }
@@ -120,6 +120,17 @@ footer {
 #active-button {
   color: darkgoldenrod;
   text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+
+  .menu-items {
+    flex-direction: column;
+    padding: 0;
+  }
 }
 
 @media (prefers-color-scheme: light) {
