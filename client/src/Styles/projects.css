@@ -67,6 +67,10 @@
     grid-template-columns: 1fr;
   }
 
+  .project-class{
+    max-width: 150px;
+  }
+
   .corner-img {
     position: static;
     margin: 20px auto;
