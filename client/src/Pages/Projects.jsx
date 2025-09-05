@@ -23,10 +23,10 @@ function Projects() {
               </a>
 
               <p className='location'>Project: Hobby</p>
-              <p className='description'>Workout app that allows a user to create a profile and add workouts.
+              <p className='description'>Workout app that allows a user to create a profile and add workouts. Utilizes a MERN-stack
               <br /> Currently in development
               </p>
-              <p className='learn'>What I learned: </p>
+              <p className='learn'>What I learned: Fullstack, React, interactive and visual design</p>
             </div>
 
             <div className='project-class'>
@@ -38,7 +38,7 @@ function Projects() {
               </a>
               <p className='location'>Project: Kristianstad University</p>
               <p className='description'>Food-related app developed in a team using MERN-stack</p>
-              <p className='learn'>What I learned: </p>
+              <p className='learn'>What I learned: MERN-stack, primarily backend and cooperating in a team</p>
             </div>
 
             <div className='project-class'>
@@ -48,8 +48,8 @@ function Projects() {
 
               </a>
               <p className='location'>Project: Practice</p>
-              <p className='description'>Introduction to HTML, CSS and Javascript</p>
-              <p className='learn'>What I learned: </p>
+              <p className='description'>Calculator, my first introduction to frontend</p>
+              <p className='learn'>What I learned: HTML, CSS and JavaScript</p>
 
             </div>
 
