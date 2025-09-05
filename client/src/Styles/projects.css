@@ -11,7 +11,7 @@
 
 .project-class {
   background-color: whitesmoke;
-  height: auto;
+  height: 100%;
   width: 100%;
   border: 5px solid black;
   margin: 20px;
@@ -20,7 +20,7 @@
   align-items: center;
   justify-content: flex-start;
   aspect-ratio: 4 / 3;
-  max-width: 800px;
+  max-width: 700px;
 }
 
 .project-class a {
@@ -31,7 +31,7 @@
 }
 
 .project-class img {
-  height: auto;
+  height: 100%;
   width: 100%;
   border-radius: 2px solid black;
   object-fit: cover;
