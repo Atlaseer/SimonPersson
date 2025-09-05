@@ -6,9 +6,9 @@ import faceImg from '../assets/face-img.jpg'
 function AboutMe () {
     return(
         <main className='about-page'>
-            <div>
-            <h1>Hello I'm Simon</h1>
-              <div>
+            <div className='about-box'>
+                <h1>Hello I'm Simon</h1>
+                <div>
                     <img src={faceImg} alt="portrait-of-simon" className="corner-img" />
               </div>
             </div>

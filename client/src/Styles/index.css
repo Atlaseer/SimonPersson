@@ -129,7 +129,7 @@ footer {
 
   .menu-items {
     flex-direction: column;
-    padding: 0;
+    padding: 5;
   }
 }
 
