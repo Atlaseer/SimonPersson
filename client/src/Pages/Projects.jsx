@@ -5,6 +5,7 @@ import '../Styles/projects.css';
 import progressionPic from '../assets/progression.png'
 import calcPic from '../assets/calc.png'
 import foodloversPic from '../assets/foodlovers.png'
+import machineLearning from '../assets/machineLearning.png'
 
 
 function Projects() {
@@ -13,6 +14,30 @@ function Projects() {
                     <h2>These are some of the projects I've been working on!</h2>
 
           <div className='project-grid'>
+
+            <div className='project-class'>
+              <h2 className='project-title'>Machine Learning - Prediction Model</h2>
+              <a href="https://github.com/Atlaseer/MachineLearning-ModelTraining">
+              <img className='img' src={machineLearning} alt="machineLearning-pic" />
+
+              </a>
+              <p className='location'>Project: Kristianstad University</p>
+              <p className='description'>We created a custom logistical regression model with the goal to predic the winner in the UFC competition based of a dataset of previous matches</p>
+              <p className='learn'>What I learned: Training, testing and validating a custom logistical regression model</p>
+
+            </div>
+
+            <div className='project-class'>
+              <h2 className='project-title'>FoodLovers</h2>
+              <a href="https://fullstackproject-clientside.onrender.com/"
+              target='_blank'
+              rel='noopener noreferrer'>
+              <img className='img' src={foodloversPic} alt="project-pic" />
+              </a>
+              <p className='location'>Project: Kristianstad University</p>
+              <p className='description'>Food-related app developed in a team using MERN-stack</p>
+              <p className='learn'>What I learned: MERN-stack, primarily backend and cooperating in a team</p>
+            </div>
             
             <div className='project-class'>
               <h2 className='project-title'>Progression</h2>
@@ -30,18 +55,6 @@ function Projects() {
             </div>
 
             <div className='project-class'>
-              <h2 className='project-title'>FoodLovers</h2>
-              <a href="https://fullstackproject-clientside.onrender.com/"
-              target='_blank'
-              rel='noopener noreferrer'>
-              <img className='img' src={foodloversPic} alt="project-pic" />
-              </a>
-              <p className='location'>Project: Kristianstad University</p>
-              <p className='description'>Food-related app developed in a team using MERN-stack</p>
-              <p className='learn'>What I learned: MERN-stack, primarily backend and cooperating in a team</p>
-            </div>
-
-            <div className='project-class'>
               <h2 className='project-title'>Calculator</h2>
               <a href="https://github.com/Atlaseer/calculator">
               <img className='img' src={calcPic} alt="project-pic" />
@@ -52,6 +65,8 @@ function Projects() {
               <p className='learn'>What I learned: HTML, CSS and JavaScript</p>
 
             </div>
+
+
 
           </div>
 
