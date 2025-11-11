@@ -35,7 +35,7 @@ function Projects() {
               <img className='img' src={foodloversPic} alt="project-pic" />
               </a>
               <p className='location'>Project: Kristianstad University</p>
-              <p className='description'>Food-related app developed in a team using MERN-stack</p>
+              <p className='description'>Food-related website developed in a team using MERN-stack</p>
               <p className='learn'>What I learned: MERN-stack, primarily backend and cooperating in a team</p>
             </div>
             

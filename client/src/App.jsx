@@ -5,6 +5,7 @@ import Header from './Components/Header.jsx';
 import Footer from './Components/Footer.jsx';
 import AboutMe from './Pages/AboutMe.jsx';
 import Projects from './Pages/Projects.jsx';
+import NotFound from './Pages/NotFound.jsx';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
 
             <Route path="/" element={<AboutMe/>} />
             <Route path="/projects" element={<Projects/>}/>
+            <Route path="*" element={<NotFound />} />
 
           </Routes>
         </main>
