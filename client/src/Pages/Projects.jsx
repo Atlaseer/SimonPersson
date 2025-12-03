@@ -6,6 +6,8 @@ import progressionPic from '../assets/progression.png'
 import calcPic from '../assets/calc.png'
 import foodloversPic from '../assets/foodlovers.png'
 import machineLearning from '../assets/machineLearning.png'
+import tsm from '../assets/tsm1.jpg'
+import project from '../assets/project.png'
 
 
 function Projects() {
@@ -14,6 +16,18 @@ function Projects() {
                     <h2>These are some of the projects I've been working on!</h2>
 
           <div className='project-grid'>
+
+            <div className='project-class'>
+              <h2 className='project-title'>Mobile Application</h2>
+              <a href="https://www.linkedin.com/feed/update/urn:li:activity:7401953612643352576/">
+              <img className='img' src={tsm} alt="AppDev-pic" />
+
+              </a>
+              <p className='location'>Project: Kristianstad University and Combitech</p>
+              <p className='description'>We developed an app designed to increase public awareness and confidence around Sweden's total defense. We used gamification to engage the user in quizzes and info</p>
+              <p className='learn'>What I learned: Kotlin in Jetpack Compose, Firebase, MVVM Architechture</p>
+
+            </div>
 
             <div className='project-class'>
               <h2 className='project-title'>Machine Learning - Prediction Model</h2>
