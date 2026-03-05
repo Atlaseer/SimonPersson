@@ -3,7 +3,6 @@
   "scripts": {
     "build": "cd client && npm run build",
     "dev": "cd client && npm run dev",
-    "predeploy": "cd client && npm run build",
     "deploy": "gh-pages -d client/dist"
   },
   "dependencies": {
