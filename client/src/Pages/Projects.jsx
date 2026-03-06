@@ -14,9 +14,7 @@ function Projects() {
     return(
         <main className="project-page">
                     <h2>These are some of the projects I've been working on!</h2>
-
           <div className='project-grid'>
-
             <div className='project-class'>
               <h2 className='project-title'>Mobile Application</h2>
               <a href="https://www.linkedin.com/feed/update/urn:li:activity:7401953612643352576/">
@@ -79,11 +77,7 @@ function Projects() {
               <p className='learn'>What I learned: HTML, CSS and JavaScript</p>
 
             </div>
-
-
-
           </div>
-
         </main>
     )
 }
