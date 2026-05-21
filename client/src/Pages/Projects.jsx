@@ -8,13 +8,43 @@ import foodloversPic from '../assets/foodlovers.png'
 import machineLearning from '../assets/machineLearning.png'
 import tsm from '../assets/tsm1.jpg'
 import project from '../assets/project.png'
+import swdev from '../assets/swdev.mp4'
+import graph from '../assets/graph.png'
 
 
 function Projects() {
     return(
         <main className="project-page">
-                    <h2>These are some of the projects I've been working on!</h2>
+        <h2>These are some of the projects I've been working on!</h2>
+
           <div className='project-grid'>
+            <div className='project-class'>
+              <h2 className='project-title'>Thesis</h2>
+              <a href="https://www.linkedin.com/feed/update/urn:li:activity:7401953612643352576/">
+              <img className='img' src={graph} alt="graph-pic" />
+
+              </a>
+              <p className='location'>Project: Kristianstad University Thesis</p>
+              <p className='description'>We benchmarked C# ML.Net and Python scikit-learn on the same dataset to compare their respective libraries and performance</p>
+              <p className='learn'>What I learned: How to write academically and conduct research</p>
+
+            </div>
+
+            <div className='project-class'>
+              <h2 className='project-title'>Software Development</h2>
+              <a href="https://www.linkedin.com/feed/update/urn:li:activity:7462529483212992513/">
+
+              <video className='img' autoPlay loop muted playsInline>
+                <source src={swdev} type='video/mp4'/>
+                <source src={swdev} type='video/ogg'/>            
+              </video>
+
+              </a>
+              <p className='location'>Project: Large team at Kristianstad University</p>
+              <p className='description'>We developed a project that connected the Arduino house with a server, database and web interface</p>
+              <p className='learn'>What I learned: C++, integrated development, teamwork</p>
+            </div>
+
             <div className='project-class'>
               <h2 className='project-title'>Mobile Application</h2>
               <a href="https://www.linkedin.com/feed/update/urn:li:activity:7401953612643352576/">

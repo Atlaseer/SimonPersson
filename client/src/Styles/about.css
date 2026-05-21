@@ -12,6 +12,13 @@
   animation: fadeUp 1s ease forwards;
 }
 
+.about-text:hover {
+  text-shadow:
+    0 0 10px gold,
+    0 0 20px orange,
+    0 0 30px gold;
+}
+
 .corner-img {
   position: fixed;
   top: 20%;

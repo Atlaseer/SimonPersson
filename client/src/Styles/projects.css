@@ -36,7 +36,8 @@
   height: 55%;
 }
 
-.project-class img {
+.project-class img,
+.project-class video {
   height: 100%;
   width: 100%;
   border-radius: 2px solid black;
@@ -44,7 +45,8 @@
   transition: transform 0.3s;
 }
 
-.project-class img:hover {
+.project-class img:hover,
+.project-class video:hover {
   transform: scale(1.1);
 }
 

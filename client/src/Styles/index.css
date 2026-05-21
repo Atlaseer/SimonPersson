@@ -39,7 +39,7 @@ a {
   text-decoration: inherit;
 }
 a:hover {
-  color: green;
+  color: grey;
   text-decoration: underline;
 }
 
@@ -58,7 +58,7 @@ h1 {
 }
 
 header {
-  color: red;
+  color: beige;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -68,7 +68,6 @@ header {
 }
 
 header:hover {
-  background-color: teal;
   transition: 0.4s;
 }
 
