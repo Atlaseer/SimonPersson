@@ -10,6 +10,8 @@
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
 
   animation: fadeUp 1s ease forwards;
+  min-width: 400px;
+  max-width: 700px;
 }
 
 .about-text:hover {
