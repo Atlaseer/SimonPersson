@@ -42,10 +42,7 @@ function AboutMe () {
                     <b>Databases:</b> MYSQL, MongoDB, Firebase<br/>
                     <b>Tools:</b> Git, Github, Postman, Jira, VsCode, IntelliJ, Rider
                     </p>
-            </div>
-
-            </div>
-            <div className='about-box'>
+           <div className='about-text'>
                 <p><b>Feel free to contact me on any of my socialmedia platforms!</b><br/>
                 <b>LinkedIn: </b><a href="https://www.linkedin.com/in/simon-persson-2b3b3919b/" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a><br/>
                 <b>Mail: </b><a href="mailto:simonpersson@outlook.com">simonpersson@outlook.com</a><br/>
@@ -53,6 +50,11 @@ function AboutMe () {
                 <p></p>
                 </p>
             </div>
+
+            </div>
+
+            </div>
+ 
         </main>
     )
 }
