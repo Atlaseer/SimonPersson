@@ -83,3 +83,18 @@
     transform: rotate(360deg);
   }
 }
+
+@media (max-width: 768px) {
+  .about-box {
+    min-width: unset;
+    width: 90vw;
+    padding: 20px;
+  }
+
+  .corner-img {
+    position: static;
+    display: block;
+    margin: 20px auto;
+    width: 120px;
+  }
+}
