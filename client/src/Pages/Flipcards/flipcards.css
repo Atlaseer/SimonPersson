@@ -1,0 +1,92 @@
+.fc-app {
+  position: relative;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  padding: 24px;
+}
+
+.fc-hint {
+  font-size: 0.875rem;
+  color: black;
+  margin-top: -16px;
+}
+
+.fc-controls {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.fc-btn {
+  padding: 10px 24px;
+  border: none;
+  border-radius: 8px;
+  background: #4f46e5;
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background 0.2s,
+    transform 0.1s;
+}
+
+.fc-btn:hover {
+  background: #4338ca;
+}
+
+.fc-btn:active {
+  transform: scale(0.97);
+}
+
+.fc-counter {
+  font-size: 0.9rem;
+  color: black;
+  min-width: 60px;
+  text-align: center;
+}
+
+.fc-practice-header {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.fc-back-btn {
+  padding: 7px 16px;
+  border: 1.5px solid #d1d5db;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #374151;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    border-color 0.15s,
+    color 0.15s;
+}
+
+.fc-back-btn:hover {
+  border-color: #4f46e5;
+  color: #4f46e5;
+}
+
+.fc-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.875rem;
+  color: black;
+  font-weight: 500;
+}
+
+.fc-sep {
+  color: #d1d5db;
+}

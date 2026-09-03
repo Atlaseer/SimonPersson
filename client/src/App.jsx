@@ -6,6 +6,7 @@ import Footer from './Components/Footer.jsx';
 import AboutMe from './Pages/AboutMe.jsx';
 import Projects from './Pages/Projects.jsx';
 import NotFound from './Pages/NotFound.jsx';
+import FlipcardsPage from './Pages/Flipcards/FlipcardsPage.jsx';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
 
             <Route path="/" element={<AboutMe/>} />
             <Route path="/projects" element={<Projects/>}/>
+            <Route path="/flipcards" element={<FlipcardsPage/>}/>
             <Route path="*" element={<NotFound />} />
 
           </Routes>

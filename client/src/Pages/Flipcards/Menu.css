@@ -1,0 +1,141 @@
+.fc-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 48px 24px;
+  gap: 8px;
+}
+
+.fc-menu-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  letter-spacing: -0.02em;
+}
+
+.fc-menu-subtitle {
+  font-size: 0.9rem;
+  color: black;
+  margin-bottom: 24px;
+}
+
+.fc-chapter-list {
+  list-style: none;
+  width: 100%;
+  max-width: 560px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0;
+}
+
+.fc-chapter-item {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.fc-chapter-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 20px;
+  border: none;
+  background: #ffffff;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #1a1a2e;
+  transition: background 0.15s;
+  text-align: left;
+}
+
+.fc-chapter-btn:hover {
+  background: #f5f5ff;
+}
+
+.fc-chapter-btn.open {
+  background: #4f46e5;
+  color: #ffffff;
+}
+
+.fc-chapter-num {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  opacity: 0.6;
+  white-space: nowrap;
+}
+
+.fc-chapter-name {
+  flex: 1;
+  font-weight: 600;
+}
+
+.fc-chevron {
+  font-size: 0.7rem;
+  opacity: 0.6;
+}
+
+.fc-subchapter-list {
+  list-style: none;
+  border-top: 1px solid #e5e7eb;
+  padding: 0;
+}
+
+.fc-subchapter-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 20px 13px 28px;
+  border: none;
+  border-top: 1px solid #f3f4f6;
+  background: #fafafa;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #374151;
+  text-align: left;
+  transition:
+    background 0.15s,
+    color 0.15s;
+}
+
+.fc-subchapter-btn:first-child {
+  border-top: none;
+}
+
+.fc-subchapter-btn:hover {
+  background: #ede9fe;
+  color: #4f46e5;
+}
+
+.fc-sub-id {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #9ca3af;
+  min-width: 28px;
+}
+
+.fc-subchapter-btn:hover .fc-sub-id {
+  color: #7c70e0;
+}
+
+.fc-sub-name {
+  flex: 1;
+  font-weight: 500;
+}
+
+.fc-card-count {
+  font-size: 0.75rem;
+  color: #9ca3af;
+  background: #f3f4f6;
+  padding: 2px 8px;
+  border-radius: 99px;
+}
+
+.fc-subchapter-btn:hover .fc-card-count {
+  background: #ddd6fe;
+  color: #5b4ed8;
+}

@@ -1,6 +1,10 @@
-import { Link, BrowserRouter } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 function Header() {
+    const location = useLocation();
+
+    if (location.pathname === '/flipcards') return null;
+
     return (
         <header>
             <div>
