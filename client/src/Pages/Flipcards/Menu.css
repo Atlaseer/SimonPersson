@@ -9,13 +9,13 @@
 .fc-menu-title {
   font-size: 2rem;
   font-weight: 700;
-  color: #1a1a2e;
+  color: white;
   letter-spacing: -0.02em;
 }
 
 .fc-menu-subtitle {
   font-size: 0.9rem;
-  color: black;
+  color: white;
   margin-bottom: 24px;
 }
 

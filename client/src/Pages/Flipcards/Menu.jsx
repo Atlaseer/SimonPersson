@@ -8,7 +8,7 @@ function Menu({ chapters, onSelect }) {
 
   return (
     <div className="fc-menu">
-      <h1 className="fc-menu-title">Flashcards</h1>
+      <h1 className="fc-menu-title">Flashcards - Communication</h1>
       <p className="fc-menu-subtitle">Choose a chapter to practice</p>
 
       <ul className="fc-chapter-list">
