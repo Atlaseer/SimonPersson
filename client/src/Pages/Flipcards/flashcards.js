@@ -158,11 +158,14 @@ const chapters = [
         id: "4.2",
         title: "Types of Nonverbal Communications",
         cards: [
-          { id: "4.2.1", question: "", answer: "" },
-          { id: "4.2.2", question: "", answer: "" },
-          { id: "4.2.3", question: "", answer: "" },
-          { id: "4.2.4", question: "", answer: "" },
-          { id: "4.2.5", question: "", answer: "" },
+          { id: "4.2.1", question: "Define kinesics", answer: "" },
+          { id: "4.2.2", question: "Define haptics", answer: "" },
+          { id: "4.2.3", question: "Define vocalics", answer: "" },
+          { id: "4.2.4", question: "Define proxemics", answer: "" },
+          { id: "4.2.5", question: "Define chronemics", answer: "" },
+          { id: "4.2.4", question: "Provide examples of types of nonverbal communication that fall under these categories.", answer: "" },
+          { id: "4.2.4", question: "Discuss the ways in which personal presentation and environment provide nonverbal cues.", answer: "" },
+
         ],
       },
       {
