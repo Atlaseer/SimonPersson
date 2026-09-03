@@ -68,3 +68,10 @@
   text-align: center;
   line-height: 1.5;
 }
+
+.fc-hint {
+  margin-top: auto !important;
+  font-size: 0.75rem !important;
+  font-weight: 400 !important;
+  opacity: 0.45;
+}

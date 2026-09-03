@@ -11,7 +11,7 @@
 
 .fc-hint {
   font-size: 0.875rem;
-  color: white;
+  color: black;
   margin-top: -16px;
 }
 
@@ -51,12 +51,10 @@
 }
 
 .fc-practice-header {
-  position: absolute;
-  top: 24px;
-  left: 24px;
   display: flex;
   align-items: center;
   gap: 16px;
+  width: 100%;
 }
 
 .fc-back-btn {

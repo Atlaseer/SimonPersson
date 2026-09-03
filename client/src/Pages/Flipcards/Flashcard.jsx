@@ -31,6 +31,7 @@ function Flashcard({ question, answer }) {
         <div className="flashcard-front">
           <span className="fc-label">Question</span>
           <FitText>{question}</FitText>
+
         </div>
         <div className="flashcard-back">
           <span className="fc-label">Answer</span>
