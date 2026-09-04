@@ -45,7 +45,7 @@ function Menu({ chapters, onSelect, onRandomize }) {
   return (
     <div className="fc-menu">
       <h1 className="fc-menu-title">Flashcards - Communication</h1>
-      <p className="fc-menu-subtitle">Choose a chapter to practice</p>
+      <p className="fc-menu-subtitle">All Questions and Definitions are from libretexts.org Communication in the Real World - An Introduction to Communication Studies </p>
 
       <ul className="fc-chapter-list">
         {chapters.map((ch) => {
