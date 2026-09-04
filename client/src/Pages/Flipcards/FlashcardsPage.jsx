@@ -36,8 +36,26 @@ function FlipcardsPage() {
   const card = cards[index];
 
   const prev = () => setIndex((i) => (i - 1 + cards.length) % cards.length);
-  const next = () => setIndex((i) => (i + 1) % cards.length);
-
+  const next = () => {
+    if (index < cards.length - 1) {
+      setIndex(index + 1);
+      return;
+    }
+    if (isRandom) {
+      setIndex(0);
+      return;
+    }
+    const { chapter, subchapter } = selection;
+    const chapterIdx = chapters.indexOf(chapter);
+    const subIdx = chapter.subchapters.indexOf(subchapter);
+    if (subIdx < chapter.subchapters.length - 1) {
+      setSelection({ chapter, subchapter: chapter.subchapters[subIdx + 1] });
+    } else if (chapterIdx < chapters.length - 1) {
+      const nextChapter = chapters[chapterIdx + 1];
+      setSelection({ chapter: nextChapter, subchapter: nextChapter.subchapters[0] });
+    }
+    setIndex(0);
+  };
   return (
     <div className="fc-app">
       <div className="fc-practice-header">
