@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import '../Styles/index.css';
 import '../Styles/projects.css';
+import flashcards from '../assets/flashcards.png'
 import progressionPic from '../assets/progression.png'
 import calcPic from '../assets/calc.png'
 import foodloversPic from '../assets/foodlovers.png'
@@ -18,7 +19,22 @@ function Projects() {
         <h2>These are some of the projects I've been working on!</h2>
 
           <div className='project-grid'>
+            
             <div className='project-class'>
+
+              <h2 className='project-title'>Flashcards</h2>
+              <a href="https://atlaseer.github.io/SimonPersson/flashcards/">
+              <img className='img' src={flashcards} alt="flashcards-pic" />
+
+              </a>
+              <p className='location'>Project: Flashcards</p>
+              <p className='description'>I created a flashcards app so my class could practice for an upcoming exam in our communication studies</p>
+              <p className='learn'>What I learned: To identify a use for programming to effectivize time and productivity</p>
+
+            </div>
+
+            <div className='project-class'>
+
               <h2 className='project-title'>Thesis</h2>
               <a href="https://www.linkedin.com/feed/update/urn:li:activity:7401953612643352576/">
               <img className='img' src={graph} alt="graph-pic" />
