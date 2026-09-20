@@ -1,0 +1,78 @@
+.is-ai-page {
+  background-color: beige;
+}
+
+.is-ai-box {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+
+  animation: fadeUp 1s ease forwards;
+  width: 600px;
+  max-width: 90vw;
+}
+
+.is-ai-intro {
+  margin-bottom: 20px;
+}
+
+.is-ai-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.is-ai-textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  font-family: inherit;
+  font-size: 1rem;
+  border: 2px solid black;
+  border-radius: 8px;
+  resize: vertical;
+}
+
+.is-ai-buttons {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.is-ai-buttons .button {
+  min-width: 100px;
+  font-size: 1.1rem;
+}
+
+.is-ai-buttons .button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.is-ai-result {
+  margin-top: 30px;
+  animation: fadeUp 0.6s ease forwards;
+}
+
+.is-ai-message {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .is-ai-box {
+    width: 90vw;
+    padding: 20px;
+  }
+}
