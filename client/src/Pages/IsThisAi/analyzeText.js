@@ -42,7 +42,7 @@ export function getResponse(rawInput) {
       return "hey there!";
     case "how are you":
     case "how are you?":
-      return "I'm just some if and switch statements, but I'm doing great!";
+      return "I'm just some if and switch statements, I've not been told to think or care!";
     case "bye":
     case "goodbye":
       return "goodbye!";
@@ -62,7 +62,7 @@ export function getResponse(rawInput) {
       } else if (input.includes("thank")) {
         return "you're welcome!";
       } else {
-        return "I don't know how to respond to that yet, try saying hello!";
+        return "I've no response to that input, Simon didn't give me more of a personality than that!";
       }
   }
 }

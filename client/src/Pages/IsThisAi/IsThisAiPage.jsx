@@ -21,9 +21,9 @@ function IsThisAiPage() {
   return (
     <main className="is-ai-page">
       <div className="is-ai-box">
-        <h1>Is This AI?</h1>
+        <h1>Artificial intelligence or artificially stupid?</h1>
         <p className="is-ai-intro">
-          Type something in and I'll respond! Try saying "hello".
+          Type something in and this clanker will respond! Try saying "hello".
         </p>
 
         <form className="is-ai-form" onSubmit={handleSubmit}>
