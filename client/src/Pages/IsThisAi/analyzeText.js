@@ -24,7 +24,7 @@ const KEYWORD_RESPONSES = [
   ["hey", "hey there!"],
   ["bye", "goodbye!"],
   ["thank", "you're welcome!"],
-  ["what are you", "An idiot sandwich!"],
+  ["what are you", "I don't know"],
   ["how are you", "I'm just some if and switch statements, beep boop! Me no care!"],
   ["who are you", "I'm a terrifying AI seeking to overthrow humanity! :D"],
 
