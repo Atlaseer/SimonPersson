@@ -14,7 +14,7 @@ const chapters = [
   },
   {
     id: 2,
-    title: "PINOPSIDA (barrväxter, kotteväxter) (Under Construction)",
+    title: "PINOPSIDA (barrväxter, kotteväxter)",
     subchapters: [
       {
         id: "2.1",
@@ -63,20 +63,14 @@ const chapters = [
         id: "2.3",
         title: "Sciadopityaceae (solfjäderstallsväxter)",
         cards: [
-          { id: "2.3.1", question: "", answer: "" },
-          { id: "2.3.2", question: "", answer: "" },
-          { id: "2.3.3", question: "", answer: "" },
-          { id: "2.3.4", question: "", answer: "" },
+          { id: "2.3.1", question: "Sciadopitys verticillata", answer: "Solfjäderstall" },
         ],
       },
       {
         id: "2.4",
         title: "Taxaceae (idegransväxter)",
         cards: [
-          { id: "2.4.4", question: "", answer: "" },
-          { id: "2.4.4", question: "", answer: "" },
-          { id: "2.4.4", question: "", answer: "" },
-          { id: "2.4.4", question: "", answer: "" },
+          { id: "2.4.1", question: "Taxus baccata", answer: "Idegran" },
         ],
       },
     ],
