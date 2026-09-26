@@ -3,7 +3,8 @@ import { Link, useLocation } from 'react-router-dom';
 function Header() {
     const location = useLocation();
 
-    if (location.pathname === '/flashcards' || location.pathname === '/isthisai') return null;
+    if (location.pathname === '/flashcards' || location.pathname === '/isthisai' || location.pathname === '/plants') return null;
+
 
     return (
         <header>
