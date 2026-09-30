@@ -9,6 +9,7 @@ import NotFound from './Pages/NotFound.jsx';
 import FlipcardsPage from './Pages/Flipcards/FlashcardsPage.jsx';
 import IsThisAiPage from './Pages/IsThisAi/IsThisAiPage.jsx';
 import PlantsPage from './Pages/Plants/PlantsPage.jsx';
+import Reflections from './Pages/Reflections.jsx';
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
             <Route path="/flashcards" element={<FlipcardsPage/>}/>
             <Route path="/isthisai" element={<IsThisAiPage/>}/>
             <Route path="/plants" element={<PlantsPage/>}/>
+            <Route path="/reflections" element={<Reflections/>}/>
             <Route path="*" element={<NotFound />} />
 
           </Routes>
