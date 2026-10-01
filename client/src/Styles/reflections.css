@@ -1,0 +1,112 @@
+.reflections-page {
+  background-color: beige;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px;
+  overflow-x: hidden;
+}
+
+.reflections-page h1 {
+  margin-bottom: 60px;
+  transition: all 0.3s ease;
+}
+
+.reflections-page h1:hover {
+  color: darkgoldenrod;
+  text-shadow:
+    0 0 10px gold,
+    0 0 20px orange,
+    0 0 30px gold;
+}
+
+.reflection-item {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+.reflection-item.from-right {
+  justify-content: flex-end;
+}
+
+.reflection-video-wrapper {
+  width: 65%;
+  opacity: 0;
+  transform: translateX(-120px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reflection-item.from-right .reflection-video-wrapper {
+  transform: translateX(120px);
+}
+
+.reflection-item.visible .reflection-video-wrapper {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reflection-video-wrapper video {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  display: block;
+}
+
+.reflection-text {
+  width: 100%;
+  max-width: 800px;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  padding: 30px 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  margin-bottom: 20px;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #333;
+  opacity: 0;
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reflection-text.from-left {
+  transform: translateX(-120px);
+}
+
+.reflection-text.from-right {
+  transform: translateX(120px);
+}
+
+.reflection-text.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reflection-text p {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .reflection-item {
+    justify-content: center !important;
+  }
+
+  .reflection-video-wrapper {
+    width: 100%;
+    transform: translateX(0) !important;
+    opacity: 0;
+  }
+
+  .reflection-item.visible .reflection-video-wrapper {
+    opacity: 1;
+  }
+
+  .reflection-text {
+    padding: 20px;
+    transform: translateX(0) !important;
+    opacity: 0;
+  }
+}

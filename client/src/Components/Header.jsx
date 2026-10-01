@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 function Header() {
     const location = useLocation();
 
-    if (location.pathname === '/flashcards' || location.pathname === '/reflection' || location.pathname === '/isthisai' || location.pathname === '/plants') return null;
+    if (location.pathname === '/flashcards' || location.pathname === '/reflections' || location.pathname === '/isthisai' || location.pathname === '/plants') return null;
 
 
     return (
@@ -12,7 +12,6 @@ function Header() {
                 <ul className='menu-items'>
                     <li><Link className='button' to="/projects">Projects</Link></li>
                     <li><Link className='button' to="/">About Me</Link></li>
-                    <li><Link className='button' to="/reflections">Reflections</Link></li>
                 </ul>
             </div>
         </header>
