@@ -80,8 +80,8 @@ function Reflections() {
       </ReflectionItem>
 
       <ReflectionText side="from-left">
-        <h2>First Impressions</h2>
-        <p>My first impressions of the course were quite positive. The material was engaging and the instructors were knowledgeable and supportive.</p>
+        <h2>The course</h2>
+        <p>The course itself was different from what I had anticipated. </p>
       </ReflectionText>
 
       <ReflectionItem side="from-left">
