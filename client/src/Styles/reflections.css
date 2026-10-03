@@ -34,14 +34,16 @@
 }
 
 .reflection-video-wrapper {
-  width: 65%;
+  width: 30%;
   opacity: 0;
-  transform: translateX(-120px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
+  transform: translateX(-400px);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
 }
 
 .reflection-item.from-right .reflection-video-wrapper {
-  transform: translateX(120px);
+  transform: translateX(400px);
 }
 
 .reflection-item.visible .reflection-video-wrapper {
@@ -69,15 +71,17 @@
   line-height: 1.7;
   color: #333;
   opacity: 0;
-  transition: opacity 0.8s ease, transform 0.8s ease;
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
 }
 
 .reflection-text.from-left {
-  transform: translateX(-120px);
+  transform: translateX(-400px);
 }
 
 .reflection-text.from-right {
-  transform: translateX(120px);
+  transform: translateX(400px);
 }
 
 .reflection-text.visible {
