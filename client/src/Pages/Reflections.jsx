@@ -3,6 +3,7 @@ import '../Styles/reflections.css';
 import trainVideo1 from '../assets/train1.MOV';
 import trainVideo2 from '../assets/train2.MOV';
 import trainVideo3 from '../assets/train3.MOV';
+import classComment from '../assets/classComment.png';
 
 const videos = [
   { side: 'from-left' },
@@ -11,7 +12,7 @@ const videos = [
   { side: 'from-right' },
 ];
 
-function ReflectionItem({ side, children }) {
+function ReflectionItem({ side, children, className = '' }) {
   const ref = useRef(null);
 
   useEffect(() => {
@@ -30,7 +31,7 @@ function ReflectionItem({ side, children }) {
   }, []);
 
   return (
-    <div ref={ref} className={`reflection-item ${side}`}>
+    <div ref={ref} className={`reflection-item ${side} ${className}`}>
       <div className="reflection-video-wrapper">
         {children}
       </div>
@@ -89,19 +90,27 @@ function Reflections() {
         <p>The course itself was different from what I had anticipated. </p>
       </ReflectionText>
 
-      <ReflectionItem side="from-left">
-        <video src={trainVideo3} autoPlay muted loop playsInline />
+      <ReflectionItem side="from-left" className="large">
+        <img src={classComment} alt="Class comment" />
       </ReflectionItem>
 
       <ReflectionText side="from-right">
         <h2>Activities</h2>
-        <p>In this education, I've been very active and engaged with my students more than I previously could have imagined.
-          
+        <p>This course pushed me to move outside of my comfort zone. Already the first week when we had an upcoming exam, 
+          I decided to create an application that uses flashcards to easier train on the questions from the literature. 
+          I wanted to help my classmates who’d been most delightful to study with, 
+          but also keep my own knowledge of programming active while doing something actually useful.
+          I believe this created a spark in me, to continue pushing myself even further.
+          During the week with the presentations I got excited to talk about a subject I was passionate about, 
+          and on just 4 hours of sleep, I volunteered to be first in line to present, and I did so not because I was the best at it, 
+          but because it was a fun experience and I wanted to grow and develop my skills further.
         </p>
-      </ReflectionText>
+        <a href="https://atlaseer.github.io/SimonPersson/flashcards" target="_blank" rel="noopener noreferrer">
+          Flashcards
+        </a>      </ReflectionText>
 
       <ReflectionItem side="from-right">
-        <video src={trainVideo3} autoPlay muted loop playsInline />
+        <video src={trainVideo2} autoPlay loop playsInline />
       </ReflectionItem>
 
       <ReflectionText side="from-right">

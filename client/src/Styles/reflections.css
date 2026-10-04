@@ -51,7 +51,12 @@
   transform: translateX(0);
 }
 
-.reflection-video-wrapper video {
+.reflection-item.large .reflection-video-wrapper {
+  width: 60%;
+}
+
+.reflection-video-wrapper video,
+.reflection-video-wrapper img {
   width: 100%;
   border-radius: 16px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
