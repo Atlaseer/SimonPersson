@@ -85,7 +85,8 @@ function Reflections() {
         <h2>Expectations</h2>
         <p>Going into this education, I was not sure what to expect. My previous experience was quite different, on a more technical level, 
           and I was unsure if this education would be on the same level or different. I was also curious on how the material would be presented to us as well, 
-          and if it would be applicable in my future career as a software developer. What will the teachers be like? And what about my classmates? Will we all get along, 
+          and if it would be applicable in my future career as a software developer. During my time on the trains to Malmö from Kristianstad, I had lots of thoughts.
+          What will the teachers be like? And what about my classmates? Will we all get along, 
           or will each student fight for themself to survive this course? I have so many thoughts and wish for them all to be answered in this course!</p>
       </ReflectionText>
 
