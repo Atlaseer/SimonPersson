@@ -4,6 +4,7 @@ import trainVideo1 from '../assets/train1.MOV';
 import trainVideo2 from '../assets/train2.MOV';
 import trainVideo3 from '../assets/train3.MOV';
 import classComment from '../assets/classComment.png';
+import thankful from '../assets/thankful.mp4';
 
 const videos = [
   { side: 'from-left' },
@@ -67,7 +68,7 @@ function ReflectionText({ side, children }) {
 function Reflections() {
   return (
     <main className="reflections-page">
-      <h1>Reflections</h1>
+      <h1 className="reflection-title">Reflections</h1>
 
       <ReflectionItem side="from-left">
         <video src={trainVideo1} autoPlay muted loop playsInline />
@@ -97,20 +98,21 @@ function Reflections() {
       <ReflectionText side="from-right">
         <h2>Activities</h2>
         <p>This course pushed me to move outside of my comfort zone. Already the first week when we had an upcoming exam, 
-          I decided to create an application that uses flashcards to easier train on the questions from the literature. 
+          I decided to create an application that uses <a href="https://atlaseer.github.io/SimonPersson/flashcards" target="_blank" rel="noopener noreferrer">
+          FLASHCARDS</a> to easier train on the questions from the literature. 
           I wanted to help my classmates who’d been most delightful to study with, 
           but also keep my own knowledge of programming active while doing something actually useful.
           I believe this created a spark in me, to continue pushing myself even further.
           During the week with the presentations I got excited to talk about a subject I was passionate about, 
           and on just 4 hours of sleep, I volunteered to be first in line to present, and I did so not because I was the best at it, 
           but because it was a fun experience and I wanted to grow and develop my skills further.
-        </p>
-        <a href="https://atlaseer.github.io/SimonPersson/flashcards" target="_blank" rel="noopener noreferrer">
-          Flashcards
-        </a>      </ReflectionText>
+          During my presentation, I tried to be engaging and interactive with the audience, and I believe I succeeded in that.
+          I also created a small <a href="https://atlaseer.github.io/SimonPersson/isthisai" target="_blank" rel="noopener noreferrer">
+          APPLICATION</a> to challenge my classmates and teachers view on what AI and machinelearning truly means.</p>
+         </ReflectionText>
 
-      <ReflectionItem side="from-right">
-        <video src={trainVideo2} autoPlay loop playsInline />
+      <ReflectionItem side="from-right" className="large">
+        <video src={thankful} loop playsInline controls />
       </ReflectionItem>
 
       <ReflectionText side="from-right">
